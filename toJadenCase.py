@@ -10,13 +10,13 @@
 #Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 #Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
-
-
 def toJadenCase(string):
         
         ans = []
         x = ''
         w_a = []
+        
+        #puts string of letters into seperate words.
         for word in string:
                 if word == ' ':
                         w_a.append(x)
@@ -25,6 +25,7 @@ def toJadenCase(string):
                     x += word
         w_a.append(x)
         
+        #capitalize first letter of each word in list w_a.
         i = 0
         for word in w_a:
             c = len(w_a)
@@ -34,12 +35,8 @@ def toJadenCase(string):
                 ans.append(word.capitalize()+ ' ')
             i += 1
         
+        #cat list elements into full string.
         final = ''
         for word in ans:
             final += word
         return final
-
-quote = "How can mirrors be real if our eyes aren't real"
-
-toJadenCase(quote)
-
