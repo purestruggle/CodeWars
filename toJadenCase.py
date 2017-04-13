@@ -1,3 +1,5 @@
+# :c)
+
 def toJadenCase(string):
         
         ans = []
